@@ -24,9 +24,9 @@ def load_data(data='cifar-10', red_size=1):
         test_file_path = join(path_to_data, 'test_batch')
         test_dict = unpickle(test_file_path)
         X_train = np.asarray(train_data)
-        X_train = X_train.reshape((X_train.shape[0], 3, -1))
+        X_train = X_train.reshape((X_train.shape[0], 3, 32, 32))
         X_test = np.asarray(test_dict[b'data'])
-        X_test = X_test.reshape((X_test.shape[0], 3, -1))
+        X_test = X_test.reshape((X_test.shape[0], 3, 32, 32))
         y_train = np.asarray(train_labels)
         y_test = np.asarray(test_dict[b'labels'])
         if red_size < 1:
