@@ -15,9 +15,8 @@ num_elite = 3
 
 def solve(X_train, y_train, X_test, y_test):
     """
-    The basic genetic algorithm. Graph is represented by an adjacency matrix
-    :param adj_mat: Adjacency matrix of graph instance required to solve
-    :return: The best found vertex cover for the graph.
+    The basic genetic algorithm.
+    :return: An uncompiled keras model. The best found Neural Network for the data.
     """
     # Generate pop_size number of random solutions. Solutions may be infeasible
     population = generate_population(pop_size, 136)
