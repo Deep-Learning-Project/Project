@@ -7,7 +7,7 @@ from keras.utils import np_utils
 
 def load_data(data='cifar-10', red_size=1):
     if data == 'cifar-10':
-        path_to_data = '/Users/Aditya/Documents/Deep Learning/Project/cifar-10-batches-py'
+        path_to_data = './cifar-10-batches-py'
         train_files = [join(path_to_data, f) for f in listdir(path_to_data) if 'data' in f]
         train_data = None
         train_labels = None
